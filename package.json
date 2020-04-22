@@ -1,0 +1,22 @@
+{
+  "name": "teste-videomaker",
+  "version": "1.0.0",
+  "description": "Projeto clone mal feito",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Marcos-Marin/teste-videomaker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Marcos-Marin/teste-videomaker/issues"
+  },
+  "homepage": "https://github.com/Marcos-Marin/teste-videomaker#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
