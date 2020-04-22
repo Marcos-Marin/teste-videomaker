@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Marcos-Marin/teste-videomaker/issues"
   },
-  "homepage": "https://github.com/Marcos-Marin/teste-videomaker#readme"
+  "homepage": "https://github.com/Marcos-Marin/teste-videomaker#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
 }
