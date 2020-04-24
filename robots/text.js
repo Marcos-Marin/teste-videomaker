@@ -2,18 +2,17 @@ const algorithmia = require('algorithmia')
 const algorithmiaApiKey = require('../credentials/algorithmia.json').apiKey
 const sentenceBoundaryDetection = require('sbd')
 
-const watsonApiKey = require('../credentials/watson-nlu.json').apikey
-const NaturalLanguageUnderstandingV1 = require('watson-developer-cloud/natural-language-understanding/v1.js')
+const watsonApikey = require('../credentials/watson-nlu.json').apikey
+const NaturalLanguageClassifierV1 = require('watson-developer-cloud/natural-language-classifier/v1')
  
-const nlu = new NaturalLanguageUnderstandingV1({
-  iam_apikey: watsonApiKey,
-  version: '2020-04-23',
-  url: 'https://gateway.watsonplatform.net/natural-language-understanding/api/'
+const classifier = new NaturalLanguageClassifierV1({
+  iam_apikey: watsonApikey,
+  url: 'https://gateway.watsonplatform.net/natural-language-classifier/api/'
 })
 
 const state = require('./state.js')
 
-async function robot(content) {
+async function robot() {
   console.log('> [text-robot] Starting...')
   const content = state.load()
 
@@ -115,3 +114,4 @@ async function robot(content) {
 }
 
 module.exports = robot
+
